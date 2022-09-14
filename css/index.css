@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin: 20px 0;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: silver;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    display: block;
+  }
+  
+  #nav-bar {
+    display: flex;
+    justify-content: end;
+    width: 70%;
+    gap: 50px;
+  }
+  
+  @media (min-width: 750px) {
+    #nav-bar {
+      justify-content: center;
+      gap: 150px;
+    }
+  }
+  
+  #main,
+  #footer {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  #main {
+    padding-top: 60px;
+  }
+  
+  .study__content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 50px 20px;
+  }
+  
+  .study__img-logo {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .how-it-works__video {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .how-it-works__video > iframe {
+    max-width: 560px;
+    width: 100%;
+  }
+  
+  .price_items {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .price__item {
+    width: calc(90% / 3);
+    display: flex;
+    flex-direction: column;
+  }
